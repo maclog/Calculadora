@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
 .controller('AccountCtrl', function($scope) {
 })
 
-function Calculadora($scope){
+.controller('CalculadoraCtrl', function Calculadora($scope){
 
     $scope.calcular = function() {
         var nr1 = $scope.valor1;
@@ -22,4 +22,4 @@ function Calculadora($scope){
 
         $scope.result = nr1 + nr2;
     };
-}
+})
