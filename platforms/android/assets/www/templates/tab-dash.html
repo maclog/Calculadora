@@ -1,0 +1,25 @@
+<ion-view title="Dashboard">
+  <ion-content class="padding">
+    <div ng-controller="CalculadoraCtrl">
+        <span>
+            <label class="item item-input">
+                <span class="input-label">
+                    Valor 1:
+                </span>
+                <input type="number" ng-model="valor1">
+            </label>
+        </span>
+        <span>
+            <label class="item item-input">
+                <span class="input-label">
+                    Valor 2:
+                </span>
+                <input type="number" ng-model="valor2">
+            </label>
+        </span>
+        <div>
+            <button ng-click="calcular()">Calcular</button>
+        Result: {{result}}</div>
+    </div>
+  </ion-content>
+</ion-view>
