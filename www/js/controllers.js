@@ -23,3 +23,11 @@ angular.module('starter.controllers', [])
         $scope.result = nr1 + nr2;
     };
 })
+
+.controller('CalculadoraRestCtrl',
+    function CalculadoraRest($scope,$http) {
+        $http.post('http://192.168.246.19/WCFTeste/Service.svc/json/somaCalculadora').success(function (resultadoSoma) {
+            $scope.result = resultadoSoma;
+        });
+    }
+)
